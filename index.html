@@ -1,20 +1,41 @@
 <!doctype html>
 <html lang="fa" dir="rtl">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="theme-color" content="#ffffff">
-  <title>rasa.ir</title>
-  <style>
-    *{box-sizing:border-box}html,body{margin:0;min-height:100%;font-family:Tahoma,Arial,sans-serif}
-    body{min-height:100vh;display:grid;place-items:center;background:#fff;color:#222}
-    main{width:min(92%,680px);min-height:70vh;display:grid;place-items:center;text-align:center}
-    h1{font-size:clamp(2rem,7vw,4rem);font-weight:500;letter-spacing:.02em;margin:0}
-  </style>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#0b1220">
+<meta name="description" content="رَسا؛ جایی برای ایده‌های روشن و شروع‌های تازه.">
+<title>رَسا | شروعی ساده</title>
+<style>
+:root{color-scheme:dark;--text:#f4f7fb;--muted:#a9b6c8;--mint:#8ee6cf;--line:#25354b}
+*{box-sizing:border-box}
+body{margin:0;background:radial-gradient(ellipse at 80% 5%,#1d3d4b 0,transparent 38%),linear-gradient(150deg,#0b1220,#101827 65%,#142b35);color:var(--text);font-family:Tahoma,Arial,sans-serif;min-height:100vh;display:flex;flex-direction:column}
+header{width:min(1080px,92%);margin:0 auto;padding:28px 0;display:flex;align-items:center;justify-content:space-between}
+.logo{font-size:25px;font-weight:800}.logo span{color:var(--mint)}
+nav a{color:var(--muted);text-decoration:none;font-size:14px}
+main{width:min(1080px,92%);margin:auto;display:grid;grid-template-columns:1.2fr .8fr;gap:40px;align-items:center;padding:65px 0 90px}
+.tag{display:inline-flex;border:1px solid #31534f;border-radius:30px;padding:8px 14px;color:var(--mint);font-size:13px;background:#102b2b}
+h1{font-size:clamp(42px,7vw,76px);line-height:1.25;margin:22px 0 16px;letter-spacing:-2px}
+h1 em{font-style:normal;color:var(--mint)}
+p{color:var(--muted);font-size:18px;line-height:2;max-width:570px}
+.actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:30px}
+a.btn{display:inline-block;padding:13px 22px;border-radius:12px;text-decoration:none;font-weight:bold;background:var(--mint);color:#09201e}
+a.ghost{border:1px solid var(--line);color:var(--text);background:#121e31}
+.art{aspect-ratio:1;border:1px solid #294153;border-radius:34px;background:linear-gradient(145deg,#183c46,#132638 60%,#172239);display:grid;place-items:center;position:relative;overflow:hidden;box-shadow:0 30px 90px #0005}
+.orb{width:55%;aspect-ratio:1;border-radius:50%;background:radial-gradient(circle at 35% 30%,#e0fff3,#8ee6cf 35%,#3b9b8d 70%,#1c5b61);box-shadow:0 0 90px #8ee6cf55;display:grid;place-items:center;color:#0b2928;font-size:clamp(55px,9vw,100px);font-weight:900}
+.art:before,.art:after{content:"";position:absolute;border:1px solid #8ee6cf33;border-radius:50%;width:82%;aspect-ratio:1}
+.art:after{width:110%}
+.note{position:absolute;bottom:22px;right:24px;color:#a8c7c6;font-size:12px}
+footer{border-top:1px solid var(--line);padding:22px 4%;text-align:center;color:#8392a7;font-size:12px}
+@media(max-width:720px){main{grid-template-columns:1fr;padding:35px 0 55px}.art{max-width:390px;width:100%;margin:auto}header{padding:20px 0}p{font-size:16px}}
+</style>
 </head>
 <body>
-  <main aria-label="صفحه اصلی">
-    <h1>rasa.ir</h1>
-  </main>
+<header><div class="logo">رَ<span>سا</span></div><nav><a href="#about">دربارهٔ رسا</a></nav></header>
+<main id="about">
+<section><div class="tag">● یک شروع تازه</div><h1>ایده‌هایت را<br><em>به جریان</em> بینداز.</h1><p>به رَسا خوش آمدی؛ فضایی ساده برای فکرهای تازه، ساختن و رشد کردن. اینجا نقطهٔ شروع ماست.</p><div class="actions"><a class="btn" href="mailto:hello@rasa.pages.dev">در تماس باش</a><a class="btn ghost" href="#about">بیشتر بدان</a></div></section>
+<div class="art"><div class="orb">ر</div><div class="note">رسا · ساده، روشن، رو به جلو</div></div>
+</main>
+<footer>© ۲۰۲۶ رَسا · ساخته‌شده با علاقه</footer>
 </body>
 </html>
